@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zorba Callata Lazo</title>
+  <meta name="description" content="Portafolio de Zorba Callata Lazo, estudiante de Ciencia de la Computación en UCSP Arequipa, Perú. Apasionado por hardware de computadoras, programación y videojuegos. Explora cursos, habilidades y contacto.">
+  <meta name="keywords" content="Zorba Callata Lazo, portafolio, ciencia de la computación, UCSP, Arequipa, hardware computadoras, C++, Python, estudiante programación">
+  <meta name="author" content="Zorba Callata Lazo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zorba207.github.io">
+  <link rel="alternate" hreflang="es" href="https://zorba207.github.io">
+
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="Zorba Callata Lazo">
+  <meta property="og:description" content="Estudiante de Ciencia de la Computación en UCSP. Apasionado por hardware y videojuegos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zorba207.github.io">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/2b7a78/ffffff?text=Zorba+Callata+Lazo">
+  <meta property="og:site_name" content="Zorba Callata Lazo">
+  <meta property="og:locale" content="es_PE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zorba Callata Lazo">
+  <meta name="twitter:description" content="Estudiante de Ciencia de la Computación. Hardware, C++, Python y más.">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630/2b7a78/ffffff?text=Zorba+Callata+Lazo">
+
+  <!-- Schema.org para Person (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Zorba Callata Lazo",
+    "jobTitle": "Estudiante de Ciencia de la Computación",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Católica San Pablo (UCSP)",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Arequipa",
+        "addressCountry": "PE"
+      }
+    },
+    "url": "https://zorba207.github.io",
+    "sameAs": [
+      "https://github.com/zorba207",
+      "https://www.linkedin.com/in/zorba-callata-lazo-b15098335"
+    ],
+    "knowsAbout": ["Hardware de Computadoras", "Programación C++", "Python", "Videojuegos"],
+    "description": "Estudiante apasionado por el hardware de computadoras y videojuegos en UCSP Arequipa."
+  }
+  </script>
+
+  <style>
+    :root{
+      --accent: #2b7a78;
+      --muted: #5c5c5c;
+      --bg: #fafafa;
+      --card: #ffffff;
+      --maxw: 1000px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *, *::before, *::after {box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#222;line-height:1.55;font-size:1rem}
+    .container{max-width:var(--maxw);margin:32px auto;padding:0 20px}
+
+    header{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .avatar{
+      width:96px;height:96px;border-radius:16px;background:linear-gradient(135deg, #d0ecea, #a8e0dd);display:flex;align-items:center;justify-content:center;
+      font-weight:800;font-size:1.4rem;color:var(--accent);letter-spacing:-1px;
+      border:3px solid rgba(43,122,120,.15);box-shadow:0 4px 12px rgba(43,122,120,.08);
+    }
+    h1{margin:0;font-size:1.75rem;font-weight:700}
+    p.lead{color:var(--muted);margin:8px 0 0;font-size:1.05rem}
+
+    nav{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+    nav a{
+      padding:9px 14px;background:var(--card);border-radius:10px;text-decoration:none;color:var(--accent);
+      border:1px solid rgba(43,122,120,.1);font-weight:600;font-size:.95rem;transition:all .2s;
+    }
+    nav a:hover{background:#eef6f5;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.06)}
+
+    main{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:28px}
+    @media (max-width:880px){main{grid-template-columns:1fr}}
+    @media (max-width:520px){.container{padding:0 16px}}
+
+    section.card{background:var(--card);border-radius:14px;padding:20px;border:1px solid rgba(0,0,0,.05);box-shadow:0 2px 8px rgba(0,0,0,.03)}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+    .section-title h2{margin:0;font-size:1.1rem;font-weight:700;color:#1a1a1a}
+    .small-note{font-size:.82rem;color:var(--muted)}
+
+    .about p{margin:0 0 12px;font-size:.98rem}
+    .skills{display:flex;gap:9px;flex-wrap:wrap;margin-top:8px}
+    .tag{
+      background:#e6f4f3;padding:6px 10px;border-radius:999px;font-size:.82rem;
+      border:1px solid rgba(43,122,120,.1);color:#1e6a68;font-weight:600
+    }
+
+    .courses-list{display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:14px}
+    .course{
+      padding:14px;border-radius:10px;background:#fdfdfd;border:1px solid rgba(0,0,0,.04);
+      transition:transform .2s, box-shadow .2s;
+    }
+    .course:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08)}
+    .course h3{margin:0;font-size:1rem;font-weight:700;color:#1a1a1a}
+    .course p{margin:6px 0 0;color:var(--muted);font-size:.9rem}
+
+    .peers{display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:12px}
+    .peer{
+      display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;background:#fff;
+      border:1px solid rgba(0,0,0,.04);transition:all .2s;
+    }
+    .peer:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(0,0,0,.06)}
+    .peer .mini-avatar{
+      width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#d6eeed,#b8e0de);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:.9rem;
+      border:2px solid rgba(43,122,120,.12)
+    }
+    .peer .meta{font-size:.96rem}
+    .peer .meta strong{display:block;color:#1a1a1a}
+
+    form label{display:block;font-size:.92rem;margin-top:12px;font-weight:600;color:#333}
+    input, textarea{
+      width:100%;padding:10px 12px;border-radius:8px;border:1px solid rgba(0,0,0,.1);
+      margin-top:6px;font-size:.95rem;font-family:inherit;transition:border .2s;
+    }
+    input:focus, textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(43,122,120,.15)}
+    button{
+      margin-top:16px;padding:11px 18px;border-radius:10px;border:0;background:var(--accent);color:white;
+      font-weight:700;cursor:pointer;font-size:.95rem;transition:all .2s;width:100%
+    }
+    button:hover{background:#236663;transform:translateY(-1px)}
+
+    aside nav a{
+      display:block;padding:10px 12px;border-radius:8px;background:#f5fafa;border:1px solid rgba(0,0,0,.05);
+      text-decoration:none;color:var(--accent);font-weight:600;font-size:.94rem;transition:all .2s
+    }
+    aside nav a:hover{background:#eef6f5;transform:translateX(4px)}
+
+    footer{margin-top:32px;text-align:center;color:var(--muted);font-size:.88rem;padding-bottom:16px}
+    footer a{color:var(--accent);text-decoration:none}
+    footer a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" role="img" aria-label="Avatar de Zorba Callata Lazo" alt="ZC">ZC</div>
+      <div>
+        <h1>Zorba Callata Lazo</h1>
+        <p class="lead">Estudiante de Ciencia de la Computación | UCSP Arequipa</p>
+        <nav>
+          <a href="#presentacion">Presentación</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#companeros">Compañeros</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Columna principal -->
+      <div>
+        <section id="presentacion" class="card about">
+          <div class="section-title"><h2>Presentación</h2><span class="small-note">Quién soy</span></div>
+          <p>Hola, soy <strong>Zorba Callata Lazo</strong>, estudiante de Ciencia de la Computación en la <strong>Universidad Católica San Pablo (UCSP)</strong> en Arequipa, Perú.</p>
+          <p>Me apasiona el <strong>hardware de las computadoras</strong>: cómo funcionan los procesadores, la memoria y todo lo que hace que una máquina "viva". También disfruto jugar videojuegos en mi tiempo libre — desde títulos indie hasta competiciones en línea.</p>
+          <p>Este portafolio es un proyecto simple hecho con HTML y CSS para mostrar mis cursos, habilidades y cómo contactarme.</p>
+
+          <div style="margin-top:16px">
+            <div class="section-title"><h2>Habilidades</h2></div>
+            <div class="skills">
+              <span class="tag">C++ básico</span>
+              <span class="tag">Python básico</span>
+              <span class="tag">Comunicación</span>
+              <span class="tag">Trabajo en equipo</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="cursos" class="card" style="margin-top:20px">
+          <div class="section-title"><h2>Cursos que estoy cursando</h2><small class="small-note">Ciclo actual – UCSP</small></div>
+          <div class="courses-list">
+            <div class="course">
+              <h3>Estructuras Discretas II</h3>
+              <p>Teoría de grafos, combinatoria y lógica avanzada.</p>
+            </div>
+            <div class="course">
+              <h3>Introducción a la Ciencia de la Computación</h3>
+              <p>Historia, paradigmas y fundamentos de la computación.</p>
+            </div>
+            <div class="course">
+              <h3>Ciencia de la Computación I</h3>
+              <p>Programación básica, algoritmos y pensamiento computacional.</p>
+            </div>
+            <div class="course">
+              <h3>Matemática II</h3>
+              <p>Cálculo diferencial, integrales y aplicaciones.</p>
+            </div>
+            <div class="course">
+              <h3>Apreciación Musical</h3>
+              <p>Análisis de géneros, historia y apreciación artística.</p>
+            </div>
+            <div class="course">
+              <h3>Introducción a la Filosofía</h3>
+              <p>Pensamiento crítico, ética y grandes preguntas humanas.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="companeros" class="card" style="margin-top:20px">
+          <div class="section-title"><h2>Mis compañeros</h2><small class="small-note">Equipo de cursos</small></div>
+          <div class="peers">
+            <div class="peer">
+              <div class="mini-avatar" role="img" aria-label="Avatar de Jorge Mamani" alt="JM">JM</div>
+              <div class="meta"><strong>Jorge Mamani</strong></div>
+            </div>
+            <div class="peer">
+              <div class="mini-avatar" role="img" aria-label="Avatar de Diego Belzu" alt="DB">DB</div>
+              <div class="meta"><strong>Diego Belzu</strong></div>
+            </div>
+            <div class="peer">
+              <div class="mini-avatar" role="img" aria-label="Avatar de Fabricio Gamarra" alt="FG">FG</div>
+              <div class="meta"><strong>Fabricio Gamarra</strong></div>
+            </div>
+            <div class="peer">
+              <div class="mini-avatar" role="img" aria-label="Avatar de Juan Cateriano" alt="JC">JC</div>
+              <div class="meta"><strong>Juan Cateriano</strong></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Barra lateral -->
+      <aside>
+        <section id="contacto" class="card">
+          <div class="section-title"><h2>Contacto</h2></div>
+          <p class="small-note">Escribe un mensaje o copia mi correo</p>
+          <form onsubmit="alert('Mensaje simulado enviado!\nCorreo: zorba.callata@ucsp.edu.pe'); return false;">
+            <label for="name">Nombre</label>
+            <input id="name" type="text" placeholder="Tu nombre" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="tu.email@ejemplo.com" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" rows="4" placeholder="Hola Zorba..." required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+            <p class="small-note" style="margin-top:12px">
+              O escribe a: <strong>zorba.callata@ucsp.edu.pe</strong>
+            </p>
+          </form>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <div class="section-title"><h2>Enlaces rápidos</h2></div>
+          <p class="small-note">Mis perfiles profesionales</p>
+          <nav style="margin-top:10px">
+            <a href="https://github.com/zorba207" target="_blank" rel="noopener">GitHub → zorba207</a>
+            <a href="https://www.linkedin.com/in/zorba-callata-lazo-b15098335" target="_blank" rel="noopener">LinkedIn → zorba-callata-lazo</a>
+          </nav>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      Hecho con pasión por el hardware y los videojuegos — 
+      <a href="https://github.com/zorba207" target="_blank" rel="noopener">Zorba Callata Lazo</a>, UCSP 2025
+    </footer>
+  </div>
+</body>
+</html>
