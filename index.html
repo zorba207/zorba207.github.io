@@ -3,28 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zorba Callata Lazo</title>
-  <meta name="description" content="Portafolio de Zorba Callata Lazo, estudiante de Ciencia de la Computación en UCSP Arequipa, Perú. Apasionado por hardware de computadoras, programación y videojuegos. Explora cursos, habilidades y contacto.">
-  <meta name="keywords" content="Zorba Callata Lazo, portafolio, ciencia de la computación, UCSP, Arequipa, hardware computadoras, C++, Python, estudiante programación">
+  <title>Zorba Callata Lazo - Estudiante de Ciencia de la Computación UCSP Arequipa</title>
+  <meta name="description" content="Portafolio de Zorba Callata Lazo, estudiante de Ciencia de la Computación en UCSP Arequipa, Perú. Explora mis cursos, habilidades en C++, Python, hardware de computadoras y pasión por videojuegos. Contacto: zorba.callata@ucsp.edu.pe">
+  <meta name="keywords" content="Zorba Callata Lazo, estudiante ciencia de la computación, UCSP Arequipa, portafolio programación, C++ básico, Python básico, hardware computadoras, videojuegos Perú, estudiante UCSP">
   <meta name="author" content="Zorba Callata Lazo">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://zorba207.github.io">
   <link rel="alternate" hreflang="es" href="https://zorba207.github.io">
 
   <!-- Open Graph para redes sociales -->
-  <meta property="og:title" content="Zorba Callata Lazo">
-  <meta property="og:description" content="Estudiante de Ciencia de la Computación en UCSP. Apasionado por hardware y videojuegos.">
+  <meta property="og:title" content="Zorba Callata Lazo - Estudiante de Ciencia de la Computación UCSP Arequipa">
+  <meta property="og:description" content="Portafolio personal: Cursos en UCSP, habilidades en programación C++ y Python, hardware de computadoras y videojuegos. Arequipa, Perú.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zorba207.github.io">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630/2b7a78/ffffff?text=Zorba+Callata+Lazo">
-  <meta property="og:site_name" content="Zorba Callata Lazo">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/2b7a78/ffffff?text=Zorba+Callata+Lazo+-+UCSP">
+  <meta property="og:site_name" content="Zorba Callata Lazo - Portafolio UCSP">
   <meta property="og:locale" content="es_PE">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Zorba Callata Lazo">
-  <meta name="twitter:description" content="Estudiante de Ciencia de la Computación. Hardware, C++, Python y más.">
-  <meta name="twitter:image" content="https://via.placeholder.com/1200x630/2b7a78/ffffff?text=Zorba+Callata+Lazo">
+  <meta name="twitter:title" content="Zorba Callata Lazo - Estudiante de Ciencia de la Computación UCSP Arequipa">
+  <meta name="twitter:description" content="Estudiante de Ciencia de la Computación en UCSP Arequipa. Habilidades: C++, Python, hardware y videojuegos. Explora mi portafolio.">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630/2b7a78/ffffff?text=Zorba+Callata+Lazo+-+UCSP">
 
   <!-- Schema.org para Person (JSON-LD) -->
   <script type="application/ld+json">
@@ -40,15 +40,22 @@
         "@type": "PostalAddress",
         "addressLocality": "Arequipa",
         "addressCountry": "PE"
-      }
+      },
+      "url": "https://ucsp.edu.pe"
     },
     "url": "https://zorba207.github.io",
     "sameAs": [
       "https://github.com/zorba207",
       "https://www.linkedin.com/in/zorba-callata-lazo-b15098335"
     ],
-    "knowsAbout": ["Hardware de Computadoras", "Programación C++", "Python", "Videojuegos"],
-    "description": "Estudiante apasionado por el hardware de computadoras y videojuegos en UCSP Arequipa."
+    "knowsAbout": ["Ciencia de la Computación", "Programación C++", "Python", "Hardware de Computadoras", "Videojuegos"],
+    "description": "Estudiante de Ciencia de la Computación en UCSP Arequipa, apasionado por hardware de computadoras, programación en C++ y Python, y videojuegos.",
+    "email": "zorba.callata@ucsp.edu.pe",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Arequipa",
+      "addressCountry": "PE"
+    }
   }
   </script>
 
@@ -105,11 +112,14 @@
     .course:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08)}
     .course h3{margin:0;font-size:1rem;font-weight:700;color:#1a1a1a}
     .course p{margin:6px 0 0;color:var(--muted);font-size:.9rem}
+    .course .professor{margin-top:8px;font-size:.88rem;color:var(--accent);font-weight:600}
+    .course .professor a{color:inherit;text-decoration:none;transition:color .2s}
+    .course .professor a:hover{text-decoration:underline}
 
     .peers{display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:12px}
     .peer{
       display:flex;gap:12px;align-items:center;padding:12px;border-radius:10px;background:#fff;
-      border:1px solid rgba(0,0,0,.04);transition:all .2s;
+      border:1px solid rgba(0,0,0,.04);transition:all .2s;cursor:pointer;
     }
     .peer:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(0,0,0,.06)}
     .peer .mini-avatar{
@@ -118,19 +128,9 @@
       border:2px solid rgba(43,122,120,.12)
     }
     .peer .meta{font-size:.96rem}
-    .peer .meta strong{display:block;color:#1a1a1a}
-
-    form label{display:block;font-size:.92rem;margin-top:12px;font-weight:600;color:#333}
-    input, textarea{
-      width:100%;padding:10px 12px;border-radius:8px;border:1px solid rgba(0,0,0,.1);
-      margin-top:6px;font-size:.95rem;font-family:inherit;transition:border .2s;
-    }
-    input:focus, textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(43,122,120,.15)}
-    button{
-      margin-top:16px;padding:11px 18px;border-radius:10px;border:0;background:var(--accent);color:white;
-      font-weight:700;cursor:pointer;font-size:.95rem;transition:all .2s;width:100%
-    }
-    button:hover{background:#236663;transform:translateY(-1px)}
+    .peer .meta strong{display:block;color:#1a1a1a;text-decoration:none}
+    .peer .meta a{color:inherit;text-decoration:none;display:block}
+    .peer .meta a:hover{text-decoration:underline}
 
     aside nav a{
       display:block;padding:10px 12px;border-radius:8px;background:#f5fafa;border:1px solid rgba(0,0,0,.05);
@@ -146,10 +146,10 @@
 <body>
   <div class="container">
     <header>
-      <div class="avatar" role="img" aria-label="Avatar de Zorba Callata Lazo" alt="ZC">ZC</div>
+      <div class="avatar" role="img" aria-label="Avatar de Zorba Callata Lazo, estudiante de Ciencia de la Computación UCSP Arequipa" alt="ZC">ZC</div>
       <div>
-        <h1>Zorba Callata Lazo</h1>
-        <p class="lead">Estudiante de Ciencia de la Computación | UCSP Arequipa</p>
+        <h1>Zorba Callata Lazo - <strong>Estudiante de Ciencia de la Computación</strong> en UCSP Arequipa</h1>
+        <p class="lead">Portafolio personal: Programación en C++ y Python, hardware de computadoras y pasión por videojuegos en Arequipa, Perú.</p>
         <nav>
           <a href="#presentacion">Presentación</a>
           <a href="#cursos">Cursos</a>
@@ -164,12 +164,11 @@
       <div>
         <section id="presentacion" class="card about">
           <div class="section-title"><h2>Presentación</h2><span class="small-note">Quién soy</span></div>
-          <p>Hola, soy <strong>Zorba Callata Lazo</strong>, estudiante de Ciencia de la Computación en la <strong>Universidad Católica San Pablo (UCSP)</strong> en Arequipa, Perú.</p>
-          <p>Me apasiona el <strong>hardware de las computadoras</strong>: cómo funcionan los procesadores, la memoria y todo lo que hace que una máquina "viva". También disfruto jugar videojuegos en mi tiempo libre — desde títulos indie hasta competiciones en línea.</p>
-          <p>Este portafolio es un proyecto simple hecho con HTML y CSS para mostrar mis cursos, habilidades y cómo contactarme.</p>
+          <p>Hola, soy <strong>Zorba Callata Lazo</strong>, estudiante de <strong>Ciencia de la Computación</strong> en la <strong>Universidad Católica San Pablo (UCSP)</strong> en <strong>Arequipa, Perú</strong>.</p>
+          <p>Me apasiona el <strong>hardware de las computadoras</strong>: cómo funcionan los procesadores, la memoria y todo lo que hace que una máquina "viva". También disfruto jugar <strong>videojuegos</strong> en mi tiempo libre — desde títulos indie hasta competiciones en línea.</p>
 
           <div style="margin-top:16px">
-            <div class="section-title"><h2>Habilidades</h2></div>
+            <div class="section-title"><h2>Habilidades en Programación y Computación</h2></div>
             <div class="skills">
               <span class="tag">C++ básico</span>
               <span class="tag">Python básico</span>
@@ -180,52 +179,59 @@
         </section>
 
         <section id="cursos" class="card" style="margin-top:20px">
-          <div class="section-title"><h2>Cursos que estoy cursando</h2><small class="small-note">Ciclo actual – UCSP</small></div>
+          <div class="section-title"><h2>Cursos de Ciencia de la Computación en UCSP Arequipa</h2><small class="small-note">Ciclo actual – Estudiante UCSP</small></div>
           <div class="courses-list">
             <div class="course">
               <h3>Estructuras Discretas II</h3>
-              <p>Teoría de grafos, combinatoria y lógica avanzada.</p>
+              <p>Teoría de grafos, combinatoria y lógica avanzada para estudiantes de computación.</p>
+              <div class="professor">Prof. <a href="https://www.linkedin.com/in/rosmery-violeta-quispe-zavala-58374638/" target="_blank" rel="noopener">Rosmery Violeta Quispe Zavala</a></div>
             </div>
             <div class="course">
               <h3>Introducción a la Ciencia de la Computación</h3>
-              <p>Historia, paradigmas y fundamentos de la computación.</p>
+              <p>Historia, paradigmas y fundamentos de la computación en UCSP Arequipa.</p>
+              <div class="professor">Prof. <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank" rel="noopener">Ernesto Cuadros-Vargas</a></div>
             </div>
             <div class="course">
               <h3>Ciencia de la Computación I</h3>
-              <p>Programación básica, algoritmos y pensamiento computacional.</p>
+              <p>Programación básica, algoritmos y pensamiento computacional para estudiantes UCSP.</p>
+              <div class="professor">Prof. Manuel Eduardo Loaiza Fernandez</div>
+              <div class="professor">Prof. <a href="https://www.linkedin.com/in/alvarohenry/" target="_blank" rel="noopener">Alvaro H. Mamani-Aliaga</a></div>
             </div>
             <div class="course">
               <h3>Matemática II</h3>
-              <p>Cálculo diferencial, integrales y aplicaciones.</p>
+              <p>Matrices y geometría analítica aplicadas a la ciencia de la computación.</p>
+              <div class="professor">Prof. <a href="https://www.linkedin.com/in/yanet-silvana-chirinos-aviles-41a3b5177/" target="_blank" rel="noopener">YANET SILVANA CHIRINOS AVILES</a></div>
             </div>
             <div class="course">
               <h3>Apreciación Musical</h3>
               <p>Análisis de géneros, historia y apreciación artística.</p>
+              <div class="professor">Prof. <a href="https://www.linkedin.com/in/patricia-valencia-pajuelo-805b2756/" target="_blank" rel="noopener">Patricia Valencia Pajuelo</a></div>
             </div>
             <div class="course">
               <h3>Introducción a la Filosofía</h3>
               <p>Pensamiento crítico, ética y grandes preguntas humanas.</p>
+              <div class="professor">Prof. Pierina Pacheco Leyton</div>
             </div>
           </div>
         </section>
 
         <section id="companeros" class="card" style="margin-top:20px">
-          <div class="section-title"><h2>Mis compañeros</h2><small class="small-note">Equipo de cursos</small></div>
+          <div class="section-title"><h2>Mis compañeros de Ciencia de la Computación</h2><small class="small-note">Equipo de cursos UCSP Arequipa</small></div>
           <div class="peers">
             <div class="peer">
-              <div class="mini-avatar" role="img" aria-label="Avatar de Jorge Mamani" alt="JM">JM</div>
-              <div class="meta"><strong>Jorge Mamani</strong></div>
+              <div class="mini-avatar" role="img" aria-label="Avatar de Jorge Mamani, compañero UCSP" alt="JM">JM</div>
+              <div class="meta"><strong><a href="https://jorgemamaniesc.github.io/" target="_blank" rel="noopener">Jorge Mamani</a></strong></div>
             </div>
             <div class="peer">
-              <div class="mini-avatar" role="img" aria-label="Avatar de Diego Belzu" alt="DB">DB</div>
+              <div class="mini-avatar" role="img" aria-label="Avatar de Diego Belzu, compañero UCSP" alt="DB">DB</div>
               <div class="meta"><strong>Diego Belzu</strong></div>
             </div>
             <div class="peer">
-              <div class="mini-avatar" role="img" aria-label="Avatar de Fabricio Gamarra" alt="FG">FG</div>
+              <div class="mini-avatar" role="img" aria-label="Avatar de Fabricio Gamarra, compañero UCSP" alt="FG">FG</div>
               <div class="meta"><strong>Fabricio Gamarra</strong></div>
             </div>
             <div class="peer">
-              <div class="mini-avatar" role="img" aria-label="Avatar de Juan Cateriano" alt="JC">JC</div>
+              <div class="mini-avatar" role="img" aria-label="Avatar de Juan Cateriano, compañero UCSP" alt="JC">JC</div>
               <div class="meta"><strong>Juan Cateriano</strong></div>
             </div>
           </div>
@@ -236,38 +242,23 @@
       <aside>
         <section id="contacto" class="card">
           <div class="section-title"><h2>Contacto</h2></div>
-          <p class="small-note">Escribe un mensaje o copia mi correo</p>
-          <form onsubmit="alert('Mensaje simulado enviado!\nCorreo: zorba.callata@ucsp.edu.pe'); return false;">
-            <label for="name">Nombre</label>
-            <input id="name" type="text" placeholder="Tu nombre" required>
-
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="tu.email@ejemplo.com" required>
-
-            <label for="message">Mensaje</label>
-            <textarea id="message" rows="4" placeholder="Hola Zorba..." required></textarea>
-
-            <button type="submit">Enviar mensaje</button>
-            <p class="small-note" style="margin-top:12px">
-              O escribe a: <strong>zorba.callata@ucsp.edu.pe</strong>
-            </p>
-          </form>
+          <p class="small-note">Correo para estudiantes y profesionales de computación</p>
+          <p style="margin-top:12px;font-size:1rem"><strong>zorba.callata@ucsp.edu.pe</strong></p>
         </section>
 
         <section class="card" style="margin-top:16px">
           <div class="section-title"><h2>Enlaces rápidos</h2></div>
-          <p class="small-note">Mis perfiles profesionales</p>
+          <p class="small-note">Perfiles de estudiante de Ciencia de la Computación UCSP</p>
           <nav style="margin-top:10px">
-            <a href="https://github.com/zorba207" target="_blank" rel="noopener">GitHub → zorba207</a>
-            <a href="https://www.linkedin.com/in/zorba-callata-lazo-b15098335" target="_blank" rel="noopener">LinkedIn → zorba-callata-lazo</a>
+            <a href="https://github.com/zorba207" target="_blank" rel="noopener">GitHub → zorba207 (Proyectos programación)</a>
+            <a href="https://www.linkedin.com/in/zorba-callata-lazo-b15098335" target="_blank" rel="noopener">LinkedIn → zorba-callata-lazo (Red UCSP Arequipa)</a>
           </nav>
         </section>
       </aside>
     </main>
 
     <footer>
-      Hecho con pasión por el hardware y los videojuegos — 
-      <a href="https://github.com/zorba207" target="_blank" rel="noopener">Zorba Callata Lazo</a>, UCSP 2025
+      Portafolio de <a href="https://zorba207.github.io">Zorba Callata Lazo</a>, estudiante de <strong>Ciencia de la Computación UCSP Arequipa 2025</strong> — Hecho con pasión por hardware, programación y videojuegos en Perú.
     </footer>
   </div>
 </body>
